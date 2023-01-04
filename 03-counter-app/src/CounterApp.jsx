@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 
 const CounterApp = ({ value }) => {
 
-    console.log('Render');
+    // console.log('Render');
 
     const[counter, setCounter] = useState(value);
 
@@ -22,14 +22,16 @@ const CounterApp = ({ value }) => {
     return (
         <>
             <h1>CounterApp</h1>
-            <h1>{counter}</h1>
+            <h2>{counter}</h2>
             <button onClick={handleAdd}>
                 +1
             </button>
             <button onClick={handleSubstract}>
                 -1
             </button>
-            <button onClick={handleReset}>
+            <button 
+                aria-label="btn-reset"
+                onClick={handleReset}>
                 Reset
             </button>
         </>

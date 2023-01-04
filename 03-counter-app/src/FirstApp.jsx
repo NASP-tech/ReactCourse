@@ -20,19 +20,22 @@ const FirstApp = ({
     name
 }) => {   
     
-    if(!title){
-        throw new Error('El title no existe');
-    }
+    // if(!title){
+    //     throw new Error('El title no existe');
+    // }
 
     return (
         <>
-            <code>{JSON.stringify(newMessage)}</code>
+            {/* <code>{JSON.stringify(newMessage)}</code> */}
             {/* <h1>{ 1 + 1 }</h1> */}
-            <h1>{getResult()}</h1>
-            <h1>{getSum(2,3)}</h1>
-            <h1>{title}</h1>
-            <h1>{subtitle + 1}</h1>
-            <h1>{name}</h1>
+            {/* <h1>{getResult()}</h1>
+            <h1>{getSum(2,3)}</h1> */}
+            {/* <h1>{title}</h1> */}
+
+            <h1 data-testid="test-title">{title}</h1>
+            <p>{subtitle}</p>
+            <p>{subtitle}</p>
+            <p>{name}</p>
             {/* <p>Lorem, ipsum dolor.</p> */}
             {/** Para hacer comentarios*/}
         </>
